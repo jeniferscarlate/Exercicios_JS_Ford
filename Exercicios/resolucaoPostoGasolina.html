@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resolução do exercicío posto de gasolina</title>
+</head>
+<body>
+    <script>
+        const litros = parseFloat(prompt("Digite a quantidade de litros que você deseja comprar: "));
+        const tipoCombustivel = prompt(`Qual o tipo de combustível você deseja? 
+        Digite:
+        (G) - Gasolina; 
+        (A) - Álcool`);
+
+        const totalAlcool = litros * 4.90;
+        const totalGasolina = litros * 5.30;
+
+        if(tipoCombustivel == 'A' || tipoCombustivel == 'a' && litros <= 20){
+            alert(`
+            O tipo de combustivel escolhido foi ${tipoCombustivel}.
+            O desconto será de 3% por litro do álcool.
+            O valor a ser pago é igual a R$${(totalAlcool - (totalAlcool* 0.03))}.`);
+        }
+        else if(tipoCombustivel == 'A' || tipoCombustivel == 'a' && litros > 20){
+            alert(`
+            O tipo de combustivel escolhido foi ${tipoCombustivel}.
+            O desconto será de 5% por litro do álcool.
+            O valor a ser pago é igual a R$${(totalAlcool - (totalAlcool* 0.05))}.`);
+        }
+        else if(tipoCombustivel == 'G' || tipoCombustivel == 'g' && litros <= 20){
+            alert(`
+            O tipo de combustivel escolhido foi ${tipoCombustivel}.
+            O desconto será de 4% por litro da gasolina.
+            O valor a ser pago é igual a R$${(totalGasolina - (totalGasolina* 0.04))}.`);
+        }
+        else if(tipoCombustivel == 'G' || tipoCombustivel == 'g' && litros > 20){
+            alert(`
+            O tipo de combustivel escolhido foi ${tipoCombustivel}.
+            O desconto será de 6% por litro da gasolina.
+            O valor a ser pago é igual a R$${(totalGasolina - (totalGasolina* 0.06))}.`);
+        }
+    </script>
+</body>
+</html>

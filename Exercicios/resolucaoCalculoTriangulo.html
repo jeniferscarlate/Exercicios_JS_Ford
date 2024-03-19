@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resolução do exercício de calculo do triângulo</title>
+</head>
+<body>
+    <script>
+        const lado1 = parseFloat(prompt(`Digite o primeiro lado do triângulo: `));
+        const lado2 = parseFloat(prompt(`Digite o segundo lado do triângulo: `));
+        const lado3 = parseFloat(prompt(`Digite o terceiro lado do triângulo: `));
+
+        if(lado1 == lado2 && lado2 == lado3){
+            alert("O Triângulo é Equilátero.");
+        }
+        else if(lado1 != lado2 && lado2 != lado3 && lado1 != lado3){
+            alert("O Triângulo é Escaleno.");
+        }
+        else{
+            alert("O Triângulo é Isóscele.")
+        }
+    </script>
+</body>
+</html>

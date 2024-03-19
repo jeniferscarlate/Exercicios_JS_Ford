@@ -19,26 +19,26 @@
         if(tipoCombustivel == 'A' || tipoCombustivel == 'a' && litros <= 20){
             alert(`
             O tipo de combustivel escolhido foi ${tipoCombustivel}.
-            O desconto será de 3% por litro do álcool.
-            O valor a ser pago é igual a R$${(totalAlcool - (totalAlcool* 0.03))}.`);
+            O desconto será de 3% por litro de álcool.
+            O valor a ser pago é igual a R$${(totalAlcool - (totalAlcool* 0.03)).toFixed(2)}.`);
         }
         else if(tipoCombustivel == 'A' || tipoCombustivel == 'a' && litros > 20){
             alert(`
             O tipo de combustivel escolhido foi ${tipoCombustivel}.
-            O desconto será de 5% por litro do álcool.
-            O valor a ser pago é igual a R$${(totalAlcool - (totalAlcool* 0.05))}.`);
+            O desconto será de 5% por litro de álcool.
+            O valor a ser pago é igual a R$${(totalAlcool - (totalAlcool* 0.05)).toFixed(2)}.`);
         }
         else if(tipoCombustivel == 'G' || tipoCombustivel == 'g' && litros <= 20){
             alert(`
             O tipo de combustivel escolhido foi ${tipoCombustivel}.
-            O desconto será de 4% por litro da gasolina.
-            O valor a ser pago é igual a R$${(totalGasolina - (totalGasolina* 0.04))}.`);
+            O desconto será de 4% por litro de gasolina.
+            O valor a ser pago é igual a R$${(totalGasolina - (totalGasolina* 0.04)).toFixed(2)}.`);
         }
         else if(tipoCombustivel == 'G' || tipoCombustivel == 'g' && litros > 20){
             alert(`
             O tipo de combustivel escolhido foi ${tipoCombustivel}.
-            O desconto será de 6% por litro da gasolina.
-            O valor a ser pago é igual a R$${(totalGasolina - (totalGasolina* 0.06))}.`);
+            O desconto será de 6% por litro de gasolina.
+            O valor a ser pago é igual a R$${(totalGasolina - (totalGasolina* 0.06)).toFixed(2)}.`);
         }
     </script>
 </body>

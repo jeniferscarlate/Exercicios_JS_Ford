@@ -21,7 +21,7 @@
             case '2':
                 alert(`
                 Você é funcionário da loja, portanto, terá 10% de desconto. 
-                O valor do desconto é R$${valorCompra*0.10}.
+                O valor do desconto é R$${valorCompra*0.1}.
                 O valor a ser pago é R$${valorCompra - (valorCompra*0.1)}.`);    
                 break;
             case '3':
@@ -30,7 +30,9 @@
                 O valor do desconto é R$${valorCompra*0.05}.
                 O valor a ser pago é R$${valorCompra - (valorCompra*0.05)}`);
                 break;
-
+            default:
+                alert('Valor não conhecido. Tente novamente com um valor válido.');
+                break;
         }
     </script>
 </body>

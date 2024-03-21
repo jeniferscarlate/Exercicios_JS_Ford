@@ -7,13 +7,22 @@
 </head>
 <body>
     <script>
-           const nomes = [2,3,4,5];
+            const nomes = [];
 
-           console.log(nomes);
+            for (let i =1; i<= 10; i++){
+                const nome = prompt(`Digite o ${i}º nome: `);
+                nomes.push(nome);
+            }
+            const nomeParaBuscar = prompt("Digite o nome que você deseja buscar: ");
 
-           for(const pos=0; pos < nomes.length; pos++){
-                console.log(`A posição ${pos} tem o valor ${nomes}`);
-           }
+            const encontrado = nomes.includes(nomeParaBuscar);
+
+            if(encontrado){
+                alert('Achei!');
+            }
+            else{
+                alert('Não achei!');
+            }
     </script>
 </body>
 </html>
